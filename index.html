@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>New app</title>
+	<link rel="stylesheet" href="./node_modules/simplemde/dist/simplemde.min.css">
+	<script src="./node_modules/simplemde/dist/simplemde.min.js"></script>
+	<style type="text/css">
+		html, body{
+			height: 100%;
+			display: flex;
+			flex: 1;
+			flex-direction: column;
+		}
+		.CodeMirror{
+			flex: 1;
+		}
+	</style>
+</head>
+<body>
+
+<textarea id="editor"></textarea>
+
+<script>
+	var editor = new SimpleMDE({
+		element: document.getElementById('editor')
+	})
+</script>
+
+</body>
+</html>
